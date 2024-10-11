@@ -1,5 +1,10 @@
+from dotenv import load_dotenv
+load_dotenv()
 import os
 import re
+
+from dotenv import load_dotenv
+load_dotenv()
 
 class AzureConfig:
     def __init__(self):
@@ -63,3 +68,4 @@ class AzureConfig:
         if match:
             return match.group(1)
         return None
+    
